@@ -69,7 +69,7 @@ app.put("/api/tasks/:id", async (req, res) =>{
       req.body,
       {
         new: true,
-        runValidation: true,
+        runValidators: true,
       }
     );
     if (!updateTask) {
